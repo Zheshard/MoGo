@@ -200,8 +200,6 @@ body {
 /*------------------------------------------*/
 
 /*стили для слайдера в нижней части баннера*/
-.banner__slider {
-}
 .slider {
   display: flex;
   justify-content: space-between;
