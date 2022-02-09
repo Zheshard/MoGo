@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
 /* обнуление css свойств --> */
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   font-size: 15px;
 }
 /*обертка*/
@@ -54,9 +54,10 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+	/*border: 1px solid #000;*/
 }
 
-/*стили для баннера*/
+/*!стили для секции баннера*/
 .banner {
   background: url(../img/images/banner/banner_background.jpg) top center no-repeat;
   background-size: cover;
@@ -65,7 +66,7 @@ body {
   background: linear-gradient(0deg, rgba(245,226,142,0.9) 0%, rgba(217,128,128,0.9) 100%);
   background-size: cover;
   color: #fff;
-  padding: 30px 0 0 0;
+  padding: 30px 0;
   display: flex;
   min-height: 100%;
 }
@@ -155,6 +156,7 @@ body {
   margin: 0 auto;
 }
 .banner__subtitle {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 72px;
   text-align: center;
   margin: 0 0 57px 0;
@@ -175,7 +177,9 @@ body {
   height: 3px;
   background-color: #fff;
 }
+/*------------------------------------------*/
 
+/*стили для кнопки баннера*/
 .banner__button {
   margin: 0 auto 157px;
 }
@@ -203,15 +207,15 @@ body {
 .slider {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
+  /*margin: 0 -15px;*/
 }
 .slider__elem {
-  /*display: block;*/
   width: 280px;
   border-top: 3px solid #f4ebc8;
-  padding: 26px 15px;
+  padding: 26px 15px 0;
   text-transform: uppercase;
   transition: 0.5s;
+	margin: 0 15px;
 
   font-size: 18px;
   color: #f4ebc8;
@@ -219,6 +223,12 @@ body {
 .slider__elem span {
   font-size: 24px;
   font-weight: 700;
+}
+.slider__elem:first-child{
+  margin: 0 15px 0 0;
+} 
+.slider__elem:last-child{
+  margin: 0 0 0 15px;
 }
 
 .slider__elem:hover {
@@ -236,3 +246,118 @@ body {
   background-color: #d98080;
 }
 /*------------------------------------------*/
+/*!------------------------------------------*/
+
+
+/*!стили для секции "о нас"*/
+.about-us {
+	padding: 95px 0px 110px 0px;
+}
+
+.about-us__content {
+}
+
+/*стили для заголовка секции*/
+.about-us__header-block {
+	margin: 0px 0px 47px 0px;
+}
+.header-block {
+}
+.header-block__subtitle {
+	font-size: 24px;
+  text-align: center;
+  color: #363636;
+	margin: 0px 0px 25px 0px;
+}
+.header-block__title {
+	font-size: 30px;
+  text-align: center;
+  color: #363636;
+	text-transform: uppercase;
+}
+.header-block__title::after {
+	content: "";
+
+	width: 60px;
+	height: 3px;
+	background-color: #d98080;
+
+	display: block;
+	margin: 40px auto;	
+}
+/*------------------------------------------*/
+
+/*стили для текста*/
+.about-us__text {
+	margin: 0 auto 100px;
+}
+.text {
+	font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #989898;
+
+	max-width: 941px;
+}
+/*------------------------------------------*/
+
+/*стили для фотокартчек*/
+.about-us__card {
+}
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 -15px;
+}
+.card__image {
+	flex: 0 0 33.333%;
+	padding: 0 15px;
+}
+.card__image-wrapper {
+	position: relative;
+}
+.card__image img {
+	max-width: 100%;
+}
+
+.card__hover {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+
+	background:  linear-gradient(0deg, rgba(245,226,142,0.9) 0%, rgba(217,128,128,0.9) 100%);
+	transition: 0.5s ease-in-out;
+}
+.card__hover-icon {
+	display: block;
+	max-width: 32px;
+	max-height: 24px;
+	margin: 22% auto 11px;
+}
+.card__hover-text {
+	font-size: 18px;
+  text-align: center;
+	text-transform: uppercase;
+  color: #fff;
+	margin: 0 auto;
+}
+
+.card__image:hover  .card__image-wrapper {
+	position: relative;
+	top: -10px;
+	left: -10px;
+
+	box-shadow: 10px 10px 0px 0px #aee0d2;
+	transition: position 0.5s, box-shadow 500ms;
+}
+.card__image:hover  .card__hover {
+	opacity: 1;
+}
+/*------------------------------------------*/
+/*!------------------------------------------*/
