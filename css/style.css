@@ -274,6 +274,7 @@ body {
   text-align: center;
   color: #363636;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 .header-block__title::after {
 	content: "";
@@ -470,3 +471,50 @@ body {
 /*!------------------------------------------*/
 
 /*! стили для секции "Особенность"*/
+
+.feauture {
+	background:  url(/img/images/feauture/feauture_background.jpg) center no-repeat;
+	background-size: cover;
+}
+.feauture__wrapper {
+	background-color: rgba(217, 217, 217, 0.85);
+	padding: 115px 0px 0px 0px;
+}
+
+.feauture__header-block {
+}
+
+.feauture__images {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+
+}
+.feauture__image-wrapper-01 {
+	position: relative;
+	left: 23%;
+}
+
+.feauture__image-wrapper-02 {
+	position: absolute;
+	top: 38%;
+	right: 20%;
+
+	overflow: hidden;
+	/*z-index: 2;*/
+}
+/*!------------------------------------------*/
+
+/*! стили для секции "what we do"*/
+
+.what-we-do {
+	padding: 110px 0px 0px 0px;
+}
+.what-we-do__header-block {
+}
+.header-block {
+}
+.header-block__subtitle {
+}
+.header-block__title {
+}
