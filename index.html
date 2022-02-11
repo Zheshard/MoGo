@@ -51,7 +51,7 @@
 
 					<!--слайдер в нижней части баннера-->
 					<div class="banner__slider slider">
-						<a href="#" class="slider__elem">
+						<a href="#" class="slider__elem slider__elem_active">
 							<span>01</span> Intro
 						</a> <!--slider__elem-->						
 						<a href="#" class="slider__elem">
@@ -97,10 +97,12 @@
 									<img src="img/images/about_us/about_us_01.jpg" alt="">
 									
 									<div class="card__hover">
-										<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
-										<p class="card__hover-text">
-											Super team
-										</p> <!-- card__hover-text -->
+										<div class="card__hover-item">
+											<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
+											<p class="card__hover-text">
+												Super team
+											</p> <!-- card__hover-text -->
+										</div> <!-- card__hover-item -->
 									</div> <!-- card__hover -->
 
 								</div> <!--card__image-wrapper -->
@@ -111,10 +113,12 @@
 									<img src="img/images/about_us/about_us_02.jpg" alt="">
 									
 									<div class="card__hover">
-										<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
-										<p class="card__hover-text">
-											Super team
-										</p> <!-- card__hover-text -->
+										<div class="card__hover-item">
+											<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
+											<p class="card__hover-text">
+												Super team
+											</p> <!-- card__hover-text -->
+										</div>
 									</div> <!-- card__hover -->
 
 								</div> <!--card__image-wrapper -->
@@ -125,10 +129,12 @@
 									<img src="img/images/about_us/about_us_03.jpg" alt="">
 									
 									<div class="card__hover">
-										<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
-										<p class="card__hover-text">
-											Super team
-										</p> <!-- card__hover-text -->
+										<div class="card__hover-item">
+											<img class="card__hover-icon" src="img/images/about_us/icon/icon_01.svg" alt="">
+											<p class="card__hover-text">
+												Super team
+											</p> <!-- card__hover-text -->
+										</div>
 									</div> <!-- card__hover -->
 
 								</div> <!--card__image-wrapper -->
@@ -139,7 +145,8 @@
 			</div> <!-- container -->
 		</section> <!-- about-us -->
 
-		<section class="facts">
+		<!-- блок "факты" -->
+		<div class="facts">
 			<div class="container">
 				<div class="facts__row">
 
@@ -197,10 +204,161 @@
 							</p> <!-- facts__text -->
 						</div> <!-- facts__fact -->
 					</div> <!-- row__elem 5 -->
-					
+
 				</div> <!-- facts__row -->
 			</div> <!-- container -->
-		</section> <!-- facts -->
+		</div> <!-- facts -->
+
+		<!-- блок "услуги" -->
+		<section class="services">
+			<div class="container">
+				<div class="services__content">
+
+					<div class="services__header-block header-block">
+						<h3 class="header-block__subtitle">
+							We work with
+						</h3> <!-- header-block__subtitle subtitle -->
+						<h2 class="header-block__title">
+							Amazing Services
+						</h2> <!-- header-block__title title -->
+					</div> <!-- about-us__header-block header-block -->
+
+					<div class="services__row">
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_01.jpg" alt="">
+							</div> <!-- servic__image 1-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									Photography
+								</h4> <!-- servic__header 1-->
+								<p class="servic__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+								</p> <!-- servic__text 1-->
+							</div> <!-- servic__info 1-->
+						</div> <!-- services__servic 1-->
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_02.jpg" alt="">
+							</div> <!-- servic__image 2-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									Web Design
+								</h4> <!-- servic__header 2-->
+								<p class="servic__text">
+									Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+								</p> <!-- servic__text 2-->
+							</div> <!-- servic__info 2-->
+						</div> <!-- services__servic 2 -->
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_03.jpg" alt="">
+							</div> <!-- servic__image 3-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									Creativity
+								</h4> <!-- servic__header 3-->
+								<p class="servic__text">
+									Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+								</p> <!-- servic__text 3-->
+							</div> <!-- servic__info 3-->
+						</div> <!-- services__servic 3 -->
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_04.jpg" alt="">
+							</div> <!-- servic__image 4-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									seo
+								</h4> <!-- servic__header 4-->
+								<p class="servic__text">
+									Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+								</p> <!-- servic__text 4-->
+							</div> <!-- servic__info 4-->
+						</div> <!-- services__servic 4 -->
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_05.jpg" alt="">
+							</div> <!-- servic__image 5-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									Css/Html
+								</h4> <!-- servic__header 5-->
+								<p class="servic__text">
+									Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+								</p> <!-- servic__text 5-->
+							</div> <!-- servic__info 5-->
+						</div> <!-- services__servic 5 -->
+
+						<div class="services__servic servic">
+							<div class="servic__image">
+								<img src="img/images/services/icon/services_06.jpg" alt="">
+							</div> <!-- servic__image 6-->
+							<div class="servic__info">
+								<h4 class="servic__header">
+									digital
+								</h4> <!-- servic__header 6-->
+								<p class="servic__text">
+									Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+								</p> <!-- servic__text 6-->
+							</div> <!-- servic__info 6-->
+						</div> <!-- services__servic 6 -->
+
+					</div> <!-- services__row -->
+
+				</div> <!-- services__content -->
+			</div> <!-- container -->
+		</section> <!-- services -->
+
+		<!-- блок "Особенность" -->
+		<section class="feauture">
+			<div class="feauture__wrapper">
+				<div class="container">
+	
+					<div class="feauture__header-block header-block">
+						<h3 class="header-block__subtitle">
+							For all devices
+						</h3> <!-- header-block__subtitle subtitle -->
+						<h2 class="header-block__title">
+							Unique design
+						</h2> <!-- header-block__title title -->
+					</div> <!-- feauture__header-block header-block -->
+	
+					<div class="feauture__images">
+						<div class="feauture__image-wrapper-01">
+							<img src="/img/images/feauture/feauture_01.png" alt="">
+						</div> <!-- feauture__image-wrapper-01 -->
+						<div class="feauture__image-wrapper-02">
+							<img src="/img/images/feauture/feauture_02.png" alt="">
+						</div> <!-- feauture__image-wrapper-02 -->
+					</div> <!-- feauture__images -->
+	
+				</div> <!-- container -->
+			</div> <!-- feauture__wrapper -->
+		</section> <!-- feauture -->
+
+		<section class="what-we-do">
+			<div class="container">
+
+				<div class="what-we-do__header-block header-block">
+					<h3 class="header-block__subtitle">
+						Service
+					</h3> <!-- header-block__subtitle subtitle -->
+					<h2 class="header-block__title">
+						what we do
+					</h2> <!-- header-block__title title -->
+				</div> <!-- feauture__header-block header-block -->
+
+			</div> <!-- container -->
+		</section> <!-- what-we-do -->
+
+
+
 		
 	</div> <!--wrapper-->
 </body>
