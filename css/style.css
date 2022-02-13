@@ -343,8 +343,8 @@ body {
 }
 .card__hover-icon {
 	display: block;
-	max-width: 32px;
-	max-height: 24px;
+	/*max-width: 32px;
+	max-height: 24px;*/
 	margin: 0 auto 11px;
 }
 .card__hover-text {
@@ -585,4 +585,147 @@ body {
 /*!------------------------------------------*/
 
 
-/*! стили для секции " "*/
+/*! стили для блока "цитата"*/
+.quotes {
+	padding: 70px 0;
+	background-color: #f8f8f8;
+}
+
+.quotes__wrapper {
+	padding: 0 25px;
+
+	position: relative;
+}
+.quotes__wrapper::before {
+	content: url(../img/images/what_we_do/icon/arrow.svg);
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: rotate(90deg) translate(-50%, 0);
+}
+.quotes__wrapper::after {
+	content: url(../img/images/what_we_do/icon/arrow.svg);
+
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: rotate(-90deg) translate(50%, 0);
+}
+
+.quotes__content {
+	display: flex;
+	max-width: 1040px;
+	margin: 0 auto;
+
+	align-items: start;
+}
+
+.quote__icon {
+	padding: 45px 43px 44px 44px;
+	border: solid 3px #aee0d2;
+	margin: 0px 60px 0px 0px;
+}
+.quotes__quote {
+}
+.quotes__text {
+	font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: #989898;
+
+	max-width: 830px;
+	margin: 0px 0px 24px 0px;
+}
+.quotes__autor {
+	font-size: 24px;
+  color: #363636;
+	padding: 0px 0px 0px 70px;
+
+	position: relative;
+}
+.quotes__autor::before {
+	content: "";
+	width: 60px;
+	height: 3px;
+	background-color: #d98080;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "команда"*/
+.team {
+	padding: 100px 0px 120px 0px;
+}
+.team__content {
+}
+.team__header-block {
+	margin: 0px 0px 46px 0px;
+}
+
+.team__text {
+	margin: 0 auto 93px;
+}
+
+.team__card {
+}
+
+.card__hover-item_row {
+	display: flex;
+}
+.card__hover-socnet {
+	padding: 15px;
+	background-color: #f5e28e;
+	border-left: 1px solid #d98080;
+}
+.card__hover-socnet_red {
+	background-color: #d98080;
+	padding: 15px 18px;
+}
+.card__hover-socnet:nth-child(3) {
+	padding: 15px 17px;
+}
+
+.card__caption {
+	margin: 31px auto 0px;
+}
+.card__name-master {
+	font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #363636;
+	text-transform: uppercase;
+
+	margin: 0px 0px 15px 0px;
+}
+.card__pro {
+	font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  color: #989898;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "логотопиы"*/
+.logos {
+	padding: 50px 0px;
+	background-color: #f8f8f8;
+}
+
+.logos__row {
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logos__logo {
+}
