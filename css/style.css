@@ -322,7 +322,7 @@ body {
 	max-width: 100%;
 }
 
-.card__hover {
+.hover {
 	width: 100%;
 	height: 100%;
 
@@ -335,19 +335,19 @@ body {
 	background:  linear-gradient(0deg, rgba(245,226,142,0.9) 0%, rgba(217,128,128,0.9) 100%);
 	transition: 0.5s ease;
 }
-.card__hover-item {
+.hover-item {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.card__hover-icon {
+.hover-icon {
 	display: block;
 	/*max-width: 32px;
 	max-height: 24px;*/
 	margin: 0 auto 11px;
 }
-.card__hover-text {
+.hover-text {
 	font-size: 18px;
   text-align: center;
 	text-transform: uppercase;
@@ -360,7 +360,7 @@ body {
 
 	box-shadow: 10px 10px 0px 0px #aee0d2;
 }
-.card__image:hover  .card__hover {
+.card__image:hover  .hover {
 	opacity: 1;
 }
 /*------------------------------------------*/
@@ -599,6 +599,7 @@ body {
 	top: 50%;
 	left: 0;
 	transform: rotate(90deg) translate(-50%, 0);
+	cursor: pointer;
 }
 .quotes__wrapper::after {
 	content: url(../img/images/what_we_do/icon/arrow.svg);
@@ -607,6 +608,7 @@ body {
 	top: 50%;
 	right: 0;
 	transform: rotate(-90deg) translate(50%, 0);
+	cursor: pointer;
 }
 
 .quotes__content {
@@ -614,7 +616,7 @@ body {
 	max-width: 1040px;
 	margin: 0 auto;
 
-	align-items: start;
+	align-items:center;
 }
 
 .quote__icon {
@@ -671,19 +673,19 @@ body {
 .team__card {
 }
 
-.card__hover-item_row {
+.hover-item_row {
 	display: flex;
 }
-.card__hover-socnet {
+.hover-socnet {
 	padding: 15px;
 	background-color: #f5e28e;
 	border-left: 1px solid #d98080;
 }
-.card__hover-socnet_red {
+.hover-socnet_red {
 	background-color: #d98080;
 	padding: 15px 18px;
 }
-.card__hover-socnet:nth-child(3) {
+.hover-socnet:nth-child(3) {
 	padding: 15px 17px;
 }
 
@@ -740,11 +742,44 @@ body {
 }
 
 .works__content {
-
+	display: flex;
+}
+.works__column {
+	flex: 0 1 25%;
 }
 .works__image {
-
+	position: relative;
 }
-.works__image img {
-
+.works__image:hover .hover {
+	opacity: 1;
 }
+.works__image > img {
+	width: 100%;
+}
+
+.hover-text_2 {
+	font-size: 14px;
+	margin: 0px 0px 17px 0px;
+}
+.hover-text_3 {
+	font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+	letter-spacing: normal;
+  /*line-height: 1.6;*/
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "testimonial"*/
+.quotes_testimonial {
+	padding: 100px 0px 130px 0px;
+}
+.quote__icon_testimonial{
+	padding: 0;
+	border: 0;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "клиенты"*/
