@@ -433,17 +433,13 @@ body {
 	padding: 50px 32.5px;
 }
 .services__servic:nth-child(-n+3) {
-	padding: 50px 32.5px 50px 32.5px;
 	border-bottom: 1px solid #e4e4e4;
 }
 
 .servic__image {
 	flex: 0 0 32px;
 	margin: 0px 30px 0px 0px;
-
-	transition: 0.5s ease ;
 }
-
 .servic__image img {
 	width: 100%;
 }
@@ -727,5 +723,28 @@ body {
 	justify-content: space-around;
 	align-items: center;
 }
-.logos__logo {
+/*!------------------------------------------*/
+
+
+/*! стили для блока "работы"*/
+.works {
+	padding: 115px 0px 0px 0px;
+}
+
+.works__header-block {
+	margin: 0px 0px 46px 0px;
+}
+
+.works__text {
+	margin: 0 auto 100px;
+}
+
+.works__content {
+
+}
+.works__image {
+
+}
+.works__image img {
+
 }
