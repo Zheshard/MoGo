@@ -49,6 +49,7 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
+
 /*контейнер*/
 .container {
   width: 100%;
@@ -425,29 +426,29 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-.services__servic {
+.services__description {
 	flex: 1 1 33.333%;
 }
-.servic {
+.description {
 	display: flex;
 	padding: 50px 32.5px;
 }
-.services__servic:nth-child(-n+3) {
+.services__description:nth-child(-n+3) {
 	border-bottom: 1px solid #e4e4e4;
 }
 
-.servic__image {
+.description__image {
 	flex: 0 0 32px;
 	margin: 0px 30px 0px 0px;
 }
-.servic__image img {
+.description__image img {
 	width: 100%;
 }
 
-.servic__info {
+.description__info {
 	flex: 1 1 100%;
 }
-.servic__header {
+.description__header {
 	font-size: 14px;
   color: #363636;
 	text-transform: uppercase;
@@ -455,7 +456,7 @@ body {
 
 	margin: 0px 0px 16px 0px;
 }
-.servic__text {
+.description__text {
 	font-size: 15px;
   line-height: 1.6;
   color: #989898;
@@ -725,6 +726,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 }
+
 /*!------------------------------------------*/
 
 
@@ -783,3 +785,164 @@ body {
 
 
 /*! стили для блока "клиенты"*/
+.clients {
+	background: url(../img/images/clients/client_background.jpg) no-repeat;
+	background-size: cover;
+}
+.clients__wrapper {
+	background-color: rgba(255,255,255, 0.85);
+
+	padding: 115px 0px 135px 0px;
+}
+
+.clients__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.clients__description {
+	flex: 1 1 50%;
+}
+
+.description_client {
+	padding: 70px 50px 0 0;
+}
+
+.description__info_client {
+	padding: 10px 0px 0px 0px;
+}
+
+.description__image_client {
+	flex: 0 0 110px;
+}
+
+.description__header_client {
+	margin: 0px 0px 10px 0px;
+}
+
+.description__pro {
+	font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #363636;
+
+	margin: 0px 0px 35px 0px;
+
+	position: relative;
+}
+.description__pro::after {
+	content: "";
+	width: 60px;
+  height: 3px;
+  background-color: #d98080;
+
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "Блог"*/
+.blogs {
+	padding: 115px 0;
+}
+
+.blogs__header-block {
+	margin: 0px 0px 45px 0px;
+}
+
+.card__blog {
+	padding: 0px 15px;
+}
+.blog {
+}
+.blog__image {
+	position: relative;
+	margin: 0px 0px 20px 0px;
+}
+.blog__date {
+	position: absolute;
+	bottom: 10px;
+	left: -10px;
+
+	padding: 15px;
+	background-color: #aee0d2;
+
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+.date {
+}
+.date p {
+	font-size: 30px;
+}
+
+
+.blog__info {
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.blog__title {
+	font-size: 14px;
+  color: #363636;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	margin: 0px 0px 20px 0px;
+}
+.blog__text {
+	font-size: 15px;
+  line-height: 1.6;
+  color: #989898;
+}
+
+.blog__statistics {
+	padding: 20px 0px 0px 0px;
+	font-size: 15px;
+  line-height: 1.6;
+  color: #989898;
+
+	display: flex;
+}
+.blog__views {
+	margin: 0px 20px 0px 0px;
+	padding: 0px 0px 0px 25px;
+	position: relative;
+}
+.blog__views::before {
+	content: url(../img/images/blog/icon/VIEW.svg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.blog__speech {
+	padding: 0px 0px 0px 20px;
+	position: relative;
+}
+.blog__speech::before {
+	content: url(../img/images/blog/icon/SPEECH_BUBBLE.svg);
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока "карта"*/
+.map {
+	background: url(../img/images/map/map_background.jpg) no-repeat;
+	background-size: cover;
+}
+.map__wrapper {
+	padding: 55px 0px;
+	background-color: rgba(255,255,255, 0.85);
+}
+.header-block__title_red {
+	color: #d98080;
+}
+/*!------------------------------------------*/
+
+
+/*! стили для блока подвала*/
