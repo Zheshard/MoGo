@@ -477,21 +477,26 @@ body {
 .feauture__images {
 	position: relative;
 	width: 100%;
+	max-width: 600px;
 	margin: 0 auto;
-
 }
 .feauture__image-wrapper-01 {
 	position: relative;
-	left: 23%;
+	left: -2%;
+	max-width: 570px;
 }
-
 .feauture__image-wrapper-02 {
 	position: absolute;
 	top: 38%;
-	right: 20%;
+	right: -12%;
+	width: 46%;
+	max-width: 275px;
 
 	overflow: hidden;
 	/*z-index: 2;*/
+}
+.feauture__images img {
+	width: 100%;
 }
 /*!------------------------------------------*/
 
@@ -534,31 +539,32 @@ body {
 }
 .roll__item {
 	margin: 0px 0px 10px 0px;
-	border: 1px solid #e4e4e4;
+	background-color: #fff;
+	position: relative;
 }
-.roll__item_activ {
-}
+
 .roll__row {
 	display: flex;
 	padding: 13px 20px 13px 15px;
 	align-items: center;
+	border: 1px solid #e4e4e4;
+
+	background-color: #fff;
+	width: 100%;
 }
-.roll__row_activ {
-	border-bottom: 1px solid #e4e4e4;
-}
+
 .roll__icon {
 	margin: 0px 16px 0px 0px;
 	transition: 1s ease;
 }
-.roll__row:hover .roll__icon {
-	transform: scale(1.2, 1.2);
-}
+
 .roll__theme {
 	width: 100%;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
   color: #363636;
+	text-align: left;
 
 	position: relative;
 }
@@ -566,18 +572,30 @@ body {
 	content: url(../img/images/what_we_do/icon/arrow.svg);
 	position: absolute;
 	right: 0;
+
+	transition: 0.5s ease;
 }
-.roll__row_activ ::after {
-	transform: rotate(180deg);
+
+.roll__row:hover .roll__icon {
+	transform: scale(1.2, 1.2);
 }
+
 .roll__text {
 	font-size: 15px;
   font-weight: 300;
   font-style: italic;
   line-height: 1.6;
   color: #989898;
+	text-align: left;
 
 	padding: 15px 55px 23px 20px;
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+}
+
+.roll__row:focus ::after {
+	transform: rotate(360deg);
+	transform: scale(1, -1);
 }
 /*!------------------------------------------*/
 
@@ -1015,11 +1033,14 @@ body {
 	height: 40px;
 	border: solid 1px #e6e6e6;
   background-color: #fff;
-	padding: 0px 0px 0px 15px;
 
 	font-size: 15px;
-  line-height: 40px;
   color: #ccc;
+}
+.column__input input {
+	width: 100%;
+	padding: 0px 0px 0px 15px;
+	line-height: 40px;
 }
 
 .button_turquoise {
